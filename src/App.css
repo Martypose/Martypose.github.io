@@ -139,11 +139,26 @@ nav ul li a:hover {
   filter: invert(1);
 }
 
+.project-image {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
 /* Media Queries - Responsive */
 @media (max-width: 1200px) {
   .content-container {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+  .project-image {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 100%;
   }
 }
 
@@ -197,7 +212,15 @@ nav ul li a:hover {
 .header-contact {
   margin-bottom: 1rem;
   }
+  .project-image {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 100%;
+  }
 }
+
 
 @media (max-width: 480px) {
   .content-container {
@@ -220,5 +243,12 @@ nav ul li a:hover {
   nav ul li a {
     color: #fff;
     margin: 1rem;
+  }
+  .project-image {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 100%;
   }
 }
