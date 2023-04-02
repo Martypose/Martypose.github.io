@@ -1,14 +1,17 @@
 import React from 'react';
-import fotocarnet from '../assets/fotocarnet.png';
-import Navbar from './Navbar';
 import esquema_raspOCV from '../assets/esquema_raspOCV.png';
 
 const projectsData = [
   {
-    name: 'API REST con Node/Express',
-    description: 'API REST usando MySQL, Socket y otras librerías.',
-    repoLink: 'https://github.com/Martypose/Express_MadEst',
+    name: 'Medidor producción en tiempo real.',
+    description: 'Usando una raspberry, una camara y conexion a internet he realizado un proyecto de vision de computadora.\n'+
+    'Para ello se han elegido las siguientes tecnologías:\n\n • Webserver con Flask. \n• OpenCV para procesamiento de imágenes, detección y medición de objetos.'+
+    '\n• Socketio para comunicarse con un servidor externo donde se guardarán'+
+    ' y analizarán los datos para mostrarlos a cualquier aplicación que consuma esa API.'+
+    '\n\n Aqui muestro un diagrama de algunos elementos utilizados en el montaje.',
+    repoLink: null,
   },
+
   // Agrega más proyectos siguiendo el mismo formato
 ];
 
@@ -20,8 +23,15 @@ const Projects = () => {
           {projectsData.map((project, index) => (
             <li key={index}>
               <h3>{project.name}</h3>
-              <p>{project.description}</p>
-              <a href={project.repoLink} target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a>
+              <p>  {project.description.split('\n').map((line, i) => (
+    <React.Fragment key={i}>
+      {line}
+      <br />
+    </React.Fragment>
+  ))}</p>
+  {project.repoLink !== null && (
+  <a href={project.repoLink} target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a>
+)}
             </li>
           ))}
         </ul>
