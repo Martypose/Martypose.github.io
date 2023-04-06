@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../assets/fotocarnet.png';
+import profileImage from '../assets/MPP.jpg';
 import emailIcon from '../assets/email_icon.png';
 import linkedinIcon from '../assets/linkedin_icon.png';
 import githubIcon from '../assets/github_icon.png';

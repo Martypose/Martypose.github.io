@@ -1,7 +1,4 @@
 import React from 'react';
-import fotocarnet from '../assets/fotocarnet.png';
-import Navbar from './Navbar';
-
 const educationData = [
     // Agrega tu formación aquí siguiendo el formato de ejemplo
     {

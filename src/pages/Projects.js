@@ -4,7 +4,7 @@ import Card from './Card';
 import styled from 'styled-components';
 import apiimage from '../assets/api.png';
 import reactimage from '../assets/react_app.png';
-
+import flutterimage from '../assets/Flutter.png';
 const GridContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -44,7 +44,14 @@ const projectsData = [
     name: 'React App Gestión Inventario y Ventas',
     description: '• JWT Login \n • Responsive.\n • Gráficas con Chart.js.',
     image: reactimage,
+  },
+  {
+    name: 'Flutter APP Gestión Inventario',
+    description: '• Consume API \n • Multiplataforma Android/iOS.\n',
+    image: flutterimage,
+
   }
+
   // Agrega más proyectos siguiendo el mismo formato
 ];
 
