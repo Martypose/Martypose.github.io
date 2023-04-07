@@ -59,7 +59,7 @@ if (theme === 'dark') {
           <a href="mailto:martinpose@hotmail.com">
             <img src={emailIcon} alt="Email" />
           </a>
-          <a href="https://www.linkedin.com/in/martypose/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/mart%C3%ADn-pose-38a7911a8/" target="_blank" rel="noreferrer">
             <img src={linkedinIcon} alt="LinkedIn" />
           </a>
           <a href="https://github.com/Martypose" target="_blank" rel="noreferrer">
