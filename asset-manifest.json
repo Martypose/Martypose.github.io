@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.80bef648.css",
+    "main.css": "/static/css/main.b582038b.css",
     "main.js": "/static/js/main.0984368c.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Martín_Pose_-_Software_Developer.pdf": "/static/media/Martín_Pose_-_Software_Developer.19fe484589e30951241e.pdf",
@@ -12,12 +12,12 @@
     "static/media/dark.png": "/static/media/dark.99aa35df4dfbde496423.png",
     "static/media/light.png": "/static/media/light.6f705859c81ab4020069.png",
     "index.html": "/index.html",
-    "main.80bef648.css.map": "/static/css/main.80bef648.css.map",
+    "main.b582038b.css.map": "/static/css/main.b582038b.css.map",
     "main.0984368c.js.map": "/static/js/main.0984368c.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80bef648.css",
+    "static/css/main.b582038b.css",
     "static/js/main.0984368c.js"
   ]
 }
