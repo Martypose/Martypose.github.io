@@ -3,7 +3,8 @@ import profileImage from '../assets/MPP.jpg';
 import emailIcon from '../assets/email_icon.png';
 import linkedinIcon from '../assets/linkedin_icon.png';
 import githubIcon from '../assets/github_icon.png';
-import { Carousel } from 'react-bootstrap';
+import sunImage from '../assets/light.png';
+import moonImage from '../assets/dark.png';
 
 
 const Header = () => {
@@ -11,6 +12,13 @@ const Header = () => {
   const handleSliderClick = (event) => {
     const newValue = event.target.value;
     setTheme(newValue > 50 ? 'dark' : 'light');
+  };
+  const sliderStyle = {
+    backgroundImage: `url(${theme === 'light' ? sunImage : moonImage})`,
+    backgroundSize: 'cover',
+  };
+  const thumbStyle = {
+    backgroundColor: theme === 'light' ? '#ffffff' : '#1C1C1C',
   };
 
   const name = 'Martín Pose Pose';
@@ -40,13 +48,6 @@ if (theme === 'dark') {
   return (
     <header>
       <div className="header-content">
-      <input
-          type="range"
-          min="0"
-          max="100"
-          value={theme === 'dark' ? 100 : 0}
-          onChange={handleSliderClick}
-        />
         <div className="header-image">
           <img className="profile-image" src={profileImage} alt="Carnet" />
         </div>
@@ -65,6 +66,17 @@ if (theme === 'dark') {
             <img src={githubIcon} alt="GitHub" />
           </a>
         </div>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value={theme === 'dark' ? 100 : 0}
+          onChange={handleSliderClick}
+          style={{
+    ...sliderStyle,
+    '--thumb-color': thumbStyle.backgroundColor,
+  }}
+        />
       </div>
    
     </header>
