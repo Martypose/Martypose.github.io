@@ -5,8 +5,6 @@
   --color-card-shadow: rgba(0, 0, 0, 0.5);
 }
 
-
-
 /* Reset básico de estilos */
 * {
   margin: 0;
@@ -36,6 +34,10 @@ a {
   color: var(--color-text);
 }
 
+a:hover {
+  color: rgb(133, 0, 13);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -46,7 +48,7 @@ a {
 
 /* Encabezado */
 header {
-  background-color: #333;
+  background-image: linear-gradient(to right, #565656, #292929);
   padding: 20px;
   text-align: center;
   color: #fff;
@@ -58,6 +60,23 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header-contact a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.header-contact img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
 }
 
 /* Navegación */
@@ -91,10 +110,6 @@ nav ul li a {
   margin: 5rem;
 }
 
-nav ul li a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
 
 /* Sección principal */
 main {
@@ -118,52 +133,11 @@ footer {
   object-fit: cover;
 }
 
-nav ul li a:hover {
-  background-color: #ff0000;
-  border-radius: 5px;
-}
-
-/* Sección principal */
-main {
-  padding: 20px;
-  margin-top: 20px; /* Agrega un margen superior */
-}
-
-/* Contenedor de contenido con espaciado a los lados */
 .content-container {
   padding-left: 25rem;
   padding-right: 25rem;
   padding-top: 3rem; /* Agrega un relleno superior */
   padding-bottom: 3rem; /* Agrega un relleno inferior */
-}
-/* Encabezado */
-header {
-  background-image: linear-gradient(to right, #555, #f4f4f4);
-  padding: 20px;
-  text-align: center;
-}
-
-.header-image {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.header-contact {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.header-contact a {
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.header-contact img {
-  width: 24px;
-  height: 24px;
-  filter: invert(1);
 }
 
 .project-image {
@@ -216,44 +190,11 @@ header {
   }
 
   nav ul li {
-    padding: 5px 4px; /* Ajustamos el padding aquí */
+    padding: 5px 4px;
   }
 
   nav ul li a {
-    margin: 1rem; /* Ajustamos el margen aquí */
-  }
-}
-
-  .header-content {
-    flex-direction: column;
-  }
-
-/* Nuevos estilos para Header */
-.header-image {
-  padding: 5rem;
-  display: flex;
-  align-items: center;
-}
-
-.header-contact {
-  display: flex;
-  align-items: center;
-  margin-right: 15px;
-}
-
-.header-contact a {
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.header-contact img {
-  width: 24px;
-  height: 24px;
-  filter: invert(1); /* Invertimos los colores de los íconos para hacerlos visibles */
-}
-
-.header-contact {
-  margin-bottom: 1rem;
+    margin: 1rem;
   }
   .project-image {
     display: block;
@@ -262,8 +203,7 @@ header {
     border-radius: 10px;
     max-width: 100%;
   }
-
-
+}
 
 @media (max-width: 530px) {
   .content-container {
@@ -298,6 +238,7 @@ header {
     max-width: 100%;
   }
 }
+
 @media (max-width: 310px) {
   nav ul {
     display: flex;
@@ -314,7 +255,6 @@ header {
     margin: 0.5rem;
   }
 }
-
 
 input[type='range'] {
   -webkit-appearance: none;
@@ -346,6 +286,10 @@ input[type='range']::-moz-range-thumb {
 }
 
 input[type='range']:active::-webkit-slider-thumb {
+  background: #ccc;
+}
+
+input[type='range']:active::-moz-range-thumb {
   background: #ccc;
 }
 
