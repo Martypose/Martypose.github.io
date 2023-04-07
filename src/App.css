@@ -1,3 +1,13 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: #333333;
+  --color-header: #4b6cb7;
+  --color-card: #fff;
+  --color-card-shadow: rgba(0, 0, 0, 0.5);
+}
+
+
+
 /* Reset básico de estilos */
 * {
   margin: 0;
@@ -9,7 +19,8 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 h1, h2, h3, h4 {
@@ -113,10 +124,25 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
+/* Sección principal */
+main {
+  padding: 20px;
+  margin-top: 20px; /* Agrega un margen superior */
+}
+
 /* Contenedor de contenido con espaciado a los lados */
 .content-container {
-  padding-left: 20rem;
-  padding-right: 20rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
+  padding-top: 3rem; /* Agrega un relleno superior */
+  padding-bottom: 3rem; /* Agrega un relleno inferior */
+}
+/* Encabezado */
+header {
+  background-image: linear-gradient(to right, #555, #f4f4f4);
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color-header);
 }
 
 .header-image {
@@ -151,7 +177,8 @@ nav ul li a:hover {
 }
 /* Estilos para la tarjeta del proyecto */
 .project-card {
-  background-color: #fff;
+  color: var(--color-text);
+  background-color: var(--color-card);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -198,11 +225,6 @@ nav ul li a:hover {
     margin: 1rem; /* Ajustamos el margen aquí */
   }
 }
-
-  .content-container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
 
   .header-content {
     flex-direction: column;
@@ -293,4 +315,43 @@ nav ul li a:hover {
   nav ul li a {
     margin: 0.5rem;
   }
+}
+
+
+input[type='range'] {
+  -webkit-appearance: none;
+  width: 50px;
+  height: 15px;
+  background: var(--color-header);
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type='range']:active::-webkit-slider-thumb {
+  background: #ccc;
+}
+
+input[type='range']:active::-moz-range-thumb {
+  background: #ccc;
 }
