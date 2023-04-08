@@ -39,26 +39,26 @@ const projectsData = [
   },
   {
     name: 'API Rest Node',
-    description: '• Api Rest con Express. \n • MySql Database.\n • JWT Auth. \n• SocketIO event handler.',
+    description: '• Api Rest con Express \n • MySql Database\n • JWT Auth \n• SocketIO event handler',
     image: apiimage,
     link: 'https://github.com/Martypose/Express_MadEst'
   },
   {
     name: 'React App Gestión Inventario y Ventas',
-    description: '• JWT Login \n • Responsive.\n • Gráficas con Chart.js.',
+    description: '• JWT Login \n • Responsive\n • Gráficas con Chart.js',
     image: reactimage,
     link: 'https://github.com/Martypose/React_MadEst'
   },
   {
     name: 'Flutter APP Gestión Inventario',
-    description: '• Consume API \n • Multiplataforma Android/iOS.\n',
+    description: '• Consume API \n • Multiplataforma Android/iOS\n',
     image: flutterimage,
     link: 'https://github.com/Martypose/Flutter_MadEst'
 
   },
   {
     name: 'Java Web App Analisis Logs',
-    description: '• Maven  \n • Dao Pattern\n • Dao Pattern\n • JSP/Javascript\n',
+    description: '• Maven  \n • Dao Pattern\n • JSP/Javascript\n',
     image: analislogimage,
     link: 'https://github.com/PracticasIndra/AnalisisLog'
 
