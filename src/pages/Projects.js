@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import apiimage from '../assets/api.png';
 import reactimage from '../assets/react_app.png';
 import flutterimage from '../assets/Flutter.png';
+import analislogimage from '../assets/analislog.png';
 const GridContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -34,21 +35,32 @@ const projectsData = [
         '\n• Socketio para comunicarse con un servidor externo donde se guardarán'+
          ' y analizarán los datos para mostrarlos a cualquier aplicación que consuma esa API.',
     image: esquema_raspOCV,
+    link: 'https://github.com/Martypose/RaspOpenCv'
   },
   {
     name: 'API Rest Node',
     description: '• Api Rest con Express. \n • MySql Database.\n • JWT Auth. \n• SocketIO event handler.',
     image: apiimage,
+    link: 'https://github.com/Martypose/Express_MadEst'
   },
   {
     name: 'React App Gestión Inventario y Ventas',
     description: '• JWT Login \n • Responsive.\n • Gráficas con Chart.js.',
     image: reactimage,
+    link: 'https://github.com/Martypose/React_MadEst'
   },
   {
     name: 'Flutter APP Gestión Inventario',
     description: '• Consume API \n • Multiplataforma Android/iOS.\n',
     image: flutterimage,
+    link: 'https://github.com/Martypose/Flutter_MadEst'
+
+  },
+  {
+    name: 'Java Web App Analisis Logs',
+    description: '• Maven  \n • Dao Pattern\n • Dao Pattern\n • JSP/Javascript\n',
+    image: analislogimage,
+    link: 'https://github.com/PracticasIndra/AnalisisLog'
 
   }
 
@@ -60,7 +72,7 @@ const Projects = () => {
     <div className="content-container">
       <GridContainer>
         {projectsData.map((project, index) => (
-          <Card key={index} image={project.image} title={project.name} description={project.description.split('\n').map((line, i) => (
+          <Card key={index} image={project.image} link ={project.link} title={project.name} description={project.description.split('\n').map((line, i) => (
      <React.Fragment key={i}>
        {line}
        <br />
@@ -71,31 +83,5 @@ const Projects = () => {
     </div>
   );
 };
-
-// const Projects = () => {
-//   return (
-//     <div className="content-container">
-//       <div className="projects">
-//         <ul>
-//           {projectsData.map((project, index) => (
-//             <li key={index}>
-//               <h3>{project.name}</h3>
-//               <p>  {project.description.split('\n').map((line, i) => (
-//     <React.Fragment key={i}>
-//       {line}
-//       <br />
-//     </React.Fragment>
-//   ))}</p>
-//   {project.repoLink !== null && (
-//   <a href={project.repoLink} target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a>
-// )}
-//             </li>
-//           ))}
-//         </ul>
-//         <img src={esquema_raspOCV} alt="Esquema Raspberry Pi y OpenCV" className="project-image" />
-//       </div>
-//     </div>
-//   );
-// };
 
 export default Projects;

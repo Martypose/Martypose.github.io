@@ -34,11 +34,11 @@ const Description = styled.p`
   margin-bottom: 1rem;
 `;
 
-const Card = ({ image, title, description }) => {
+const Card = ({ image, title, description, link }) => {
   return (
     <CardContainer
       onClick={() => {
-        window.location.href = `/projects/${title}`;
+        window.open(`${link}`, '_blank');
       }}
     >
       <Image src={image} alt={title} />
