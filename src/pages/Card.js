@@ -38,7 +38,10 @@ const Card = ({ image, title, description, link }) => {
   return (
     <CardContainer
       onClick={() => {
-        window.open(`${link}`, '_blank');
+        if(link !== null || link !== ''){
+          window.open(`${link}`, '_blank');
+        }
+        
       }}
     >
       <Image src={image} alt={title} />
@@ -48,4 +51,23 @@ const Card = ({ image, title, description, link }) => {
   );
 };
 
-export default Card;
+const CardCertificado = ({ logo, title, description, fecha_espedicion,empresaEmisora, link }) => {
+  return (
+    <CardContainer
+      onClick={() => {
+        if(link !== null || link !== ''){
+          window.open(`${link}`, '_blank');
+        }
+        
+      }}
+    >
+      <Image src={logo} alt={title} />
+      <Title>{title}</Title>
+      <Description>{description}</Description>
+      <fecha_espedicion>{fecha_espedicion}</fecha_espedicion>
+      <empresaEmisora>{empresaEmisora}</empresaEmisora>
+    </CardContainer>
+  );
+};
+
+export { Card, CardCertificado };

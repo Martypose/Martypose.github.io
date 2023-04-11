@@ -1,4 +1,13 @@
 import React from 'react';
+import { CardCertificado } from './Card';
+import styled from 'styled-components';
+import logoGit from '../assets/git.jpg';
+import logoSolid from '../assets/solid.png';
+const GridContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
 const educationData = [
     // Agrega tu formación aquí siguiendo el formato de ejemplo
     {
@@ -17,6 +26,30 @@ const educationData = [
       endDate: 'Presente',
     }
   ];
+  
+  const certificadosData = [
+    {
+      name: 'GIT+GitHub: Todo un sistema de control de versiones de cero',
+      empresaEmisora: 'Udemy',
+      description: 'Curso de 12h sobre el sistema de control de versiones.',
+      logo: logoGit,
+      fecha_espedicion: '2022-09-14',
+      link: 'https://www.udemy.com/certificate/UC-8c6c6cd5-151f-4195-bc76-338131150397/'
+    },
+    {
+      name: 'SOLID Principles: Introducing Software Architecture & Design',
+      empresaEmisora: 'Udemy',
+      description: 'Curso de 2h sobre los principios de diseño SOLID en software.',
+      logo: logoSolid,
+      fecha_espedicion: '2022-09-15',
+      link: 'https://www.udemy.com/certificate/UC-18d21047-46ba-4329-ae37-b23bdce830e9/'
+
+
+    }
+  
+    // Agrega más proyectos siguiendo el mismo formato
+  ];  
+
 
 const Education = () => {
   return (
@@ -39,6 +72,18 @@ const Education = () => {
           </li>
         ))}
       </ul>
+      <br></br>
+      <h2>Certificados</h2>
+      <GridContainer>
+        {certificadosData.map((certificado, index) => (
+          <CardCertificado key={index} logo={certificado.logo} link ={certificado.link} empresaEmisora={certificado.empresaEmisora} fecha_espedicion={certificado.fecha_espedicion} title={certificado.name} description={certificado.description.split('\n').map((line, i) => (
+     <React.Fragment key={i}>
+       {line}
+       <br />
+     </React.Fragment>
+   ))} />
+        ))}
+      </GridContainer>
     </div>
     </div>
   );

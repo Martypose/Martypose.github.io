@@ -1,6 +1,6 @@
 import React from 'react';
 import esquema_raspOCV from '../assets/esquema_raspOCV.png';
-import Card from './Card';
+import { Card } from './Card';
 import styled from 'styled-components';
 import apiimage from '../assets/api.png';
 import reactimage from '../assets/react_app.png';
