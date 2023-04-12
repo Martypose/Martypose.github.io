@@ -162,6 +162,13 @@ footer {
   transform: translateY(-5px);
 }
 
+@media (min-width: 1201px) {
+  .content-container {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+}
+
 /* Media Queries - Responsive */
 @media (max-width: 1200px) {
   .content-container {
