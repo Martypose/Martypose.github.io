@@ -21,7 +21,7 @@ const educationData = [
     {
       institution: 'IES Fernando Wirtz Suárez',
       degree: 'Curso especialización Inteligencia Artificial y Big Data',
-      description: 'Adquirí habilidades en Big Data, programación de IA y aprendizaje automático, trabajando con tecnologías como Apache Hadoop, Spark y Kafka.\n\n Aprendí a utilizarPython, OpenCV, TensorFlow y Keras para desarrollar soluciones inteligentes y creativas. \n\nMe familiaricé con el web scraping usando Selenium y BeautifulSoup, y realicé análisis y visualización de datos con Pandas y Matplotlib.\n Además, gané experiencia en el uso de Docker y conceptos de redes para mejorar la eficiencia en el desarrollo.',
+      description: 'Adquirí habilidades en Big Data, programación de IA y aprendizaje automático, trabajando con tecnologías como Apache Hadoop, Spark y Kafka.\n\n Aprendí a utilizar Python, OpenCV, TensorFlow y Keras para desarrollar soluciones inteligentes y creativas. \n\nMe familiaricé con el web scraping usando Selenium y BeautifulSoup, y realicé análisis y visualización de datos con Pandas y Matplotlib.\n Además, gané experiencia en el uso de Docker y conceptos de redes para mejorar la eficiencia en el desarrollo.',
       startDate: '2022-11-01',
       endDate: 'Presente',
     }
