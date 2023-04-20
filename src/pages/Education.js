@@ -3,6 +3,7 @@ import { CardCertificado } from './Card';
 import styled from 'styled-components';
 import logoGit from '../assets/git.jpg';
 import logoSolid from '../assets/solid.png';
+import logoAzure from '../assets/azure.png';
 const GridContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +46,19 @@ const educationData = [
       link: 'https://www.udemy.com/certificate/UC-18d21047-46ba-4329-ae37-b23bdce830e9/'
 
 
+    },
+    {
+      name: ' AZ-900: Microsoft Azure Fundamentals Exam Prep 2023',
+      empresaEmisora: 'Udemy',
+      description: 'Curso de 6,5h sobre los fundamentos de la nube de Microsoft, Azure.',
+      logo: logoAzure,
+      fecha_espedicion: '2023-04-20',
+      link: 'https://indra.udemy.com/certificate/UC-08cff7de-06bf-4b85-876c-f74a0f3fd54d/'
+
+
     }
+
+
   
     // Agrega más proyectos siguiendo el mismo formato
   ];  
