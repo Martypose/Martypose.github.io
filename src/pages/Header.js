@@ -51,6 +51,7 @@ if (theme === 'dark') {
         <div className="header-image">
           <img className="profile-image" src={profileImage} alt="Carnet" />
         </div>
+        <div className='header-details'>
         <div className='header-name'>
         <h1>{name}</h1>
         <p>{title}</p>
@@ -77,6 +78,7 @@ if (theme === 'dark') {
     '--thumb-color': thumbStyle.backgroundColor,
   }}
         />
+      </div>
       </div>
    
     </header>
