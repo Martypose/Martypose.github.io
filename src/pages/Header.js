@@ -35,6 +35,8 @@ if (theme === 'dark') {
   root.style.setProperty("--color-header", "#182848");
   root.style.setProperty("--color-card", "#424242"); // Cambiar el color de fondo de las tarjetas del proyecto
   root.style.setProperty("--color-card-shadow", "rgba(255, 255, 255, 0.5)"); // Cambiar el box-shadow a blanco
+  root.style.setProperty("--color-timeline", "#ffffff"); // Color para el modo oscuro
+  root.style.setProperty("--color-timeline-text", "#333333"); // Color para el modo oscuro
 } else {
   // Cambiar a modo claro
   root.style.setProperty("--color-bg", "#ffffff");
@@ -42,6 +44,8 @@ if (theme === 'dark') {
   root.style.setProperty("--color-header", "#4b6cb7");
   root.style.setProperty("--color-card", "#fff"); // Cambiar el color de fondo de las tarjetas del proyecto
   root.style.setProperty("--color-card-shadow", "rgba(0, 0, 0, 0.5)"); // Cambiar el box-shadow a negro
+  root.style.setProperty("--color-timeline", "#333333"); // Color para el modo claro
+  root.style.setProperty("--color-timeline-text", "#333333"); // Color para el modo claro
 }
   }, [theme]);
 
