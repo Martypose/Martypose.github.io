@@ -1,6 +1,8 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import imatia from '../assets/imatia.jpg';
+import minsait from '../assets/minsait.jpg';
 
 const ExperienceTimeline = () => (
   <VerticalTimeline className="custom-line">
@@ -8,17 +10,31 @@ const ExperienceTimeline = () => (
       date="jun. 2023 - actualidad"
       contentStyle={{ background: 'var(--color-card)', color: 'var(--color-text)' }}
       contentArrowStyle={{ borderRight: '7px solid var(--color-card)' }}
-      iconStyle={{ background: 'var(--color-timeline)', color: 'var(--color-timeline-text)' }}
+      iconStyle={{ 
+          background: 'rgb(227,52,60)', 
+          color: '#fff',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+      }}
+      icon={<img src={imatia} alt="imatiaIcon" style={{width: '42px', height: '42px', objectFit: 'contain'}} />}
     >
-      <h3>Programador full stack</h3>
+      <h3>Programador Full Stack</h3>
       <h4>Imatia</h4>
-      <p>La Coruña, Galicia / Galiza, España</p>
+      <p>Desarrollos full stack con Spring-Angular. </p><p>PostgreSQL.</p><p>Etls con Python de multiples fuentes.</p><p>Integración continua con Jenkins.</p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       date="feb. 2021 - jun. 2023"
       contentStyle={{ background: 'var(--color-card)', color: 'var(--color-text)' }}
       contentArrowStyle={{ borderRight: '7px solid var(--color-card)' }}
-      iconStyle={{ background: 'var(--color-timeline)', color: 'var(--color-timeline-text)' }}
+      iconStyle={{ 
+          background: 'rgb(28,59,75)', 
+          color: '#fff',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+      }}
+      icon={<img src={minsait} alt="minsaitIcon" style={{width: '42px', height: '42px', objectFit: 'contain'}} />}
     >
       <h3>Desarrollador de software</h3>
       <h4>Minsait</h4>
