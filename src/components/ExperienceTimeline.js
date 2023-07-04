@@ -17,7 +17,7 @@ const ExperienceTimeline = () => (
           justifyContent: 'center',
           alignItems: 'center'
       }}
-      icon={<img src={imatia} alt="imatiaIcon" style={{width: '42px', height: '42px', objectFit: 'contain'}} />}
+      icon={<img src={imatia} alt="imatiaIcon" style={{width: '70%', height: '70%', objectFit: 'contain'}}/>}
     >
       <h3>Programador Full Stack</h3>
       <h4>Imatia</h4>
@@ -34,7 +34,7 @@ const ExperienceTimeline = () => (
           justifyContent: 'center',
           alignItems: 'center'
       }}
-      icon={<img src={minsait} alt="minsaitIcon" style={{width: '42px', height: '42px', objectFit: 'contain'}} />}
+      icon={<img src={minsait} alt="minsaitIcon" style={{width: '70%', height: '70%', objectFit: 'contain'}}/>}
     >
       <h3>Desarrollador de software</h3>
       <h4>Minsait</h4>
