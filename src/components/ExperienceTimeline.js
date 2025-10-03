@@ -21,7 +21,7 @@ const ExperienceTimeline = () => (
     >
       <h3>Programador Full Stack</h3>
       <h4>Imatia</h4>
-      <p>Desarrollos full stack con Spring-Angular. </p><p>PostgreSQL.</p><p>Etls con Python de multiples fuentes.</p><p>Integración continua con Jenkins.</p>
+      <p>• Spring + Angular + PostgreSQL<br/>• ETLs Python<br/>• CI/CD con Jenkins</p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       date="feb. 2021 - jun. 2023"
@@ -37,13 +37,8 @@ const ExperienceTimeline = () => (
       icon={<img src={minsait} alt="minsaitIcon" style={{width: '70%', height: '70%', objectFit: 'contain'}}/>}
     >
       <h3>Desarrollador de software</h3>
-      <h4>Minsait</h4>
-      <p>
-        Desarrollando Software para empresa de energía Naturgy. Trabajando con Java y Oracle SQL mayormente en backend.
-        Realizando despliegues de software a diferentes entornos, probando migraciones de aplicaciones a nube Oracle,
-        mantenimiento de dichos entornos. Breves desarrollos con PowerBuilder y JSP en frontend.
-      </p>
-      <p>A Coruña</p>
+      <h4>Minsait - Naturgy</h4>
+      <p>• Backend Java + Oracle SQL<br/>• Migraciones a Oracle Cloud<br/>• PowerBuilder & JSP</p>
     </VerticalTimelineElement>
     {/* Aquí puedes seguir agregando más elementos de línea de tiempo para tus otras experiencias */}
   </VerticalTimeline>

@@ -10,57 +10,48 @@ const GridContainer = styled.div`
   justify-content: center;
 `;
 const educationData = [
-    // Agrega tu formación aquí siguiendo el formato de ejemplo
     {
       institution: 'CPR Plurilingüe Karbo',
-      degree: 'Técnico Superior en Desarrollo de Aplicaciones Informáticas',
-      description: '• Desarrollos con Java-MySQL-HTML/JS-PHP para webs y apps de escritorio.\n• Desarrollos móvil con Android (Java) y Flutter (Dart).\n• Juego desarrollado con C# con motor Unity.\n• Trabajo final multiplataforma utilizando Flutter para app móvil, React(JS) para web\n• Node-MySQL para backend.',
-      startDate: '2018-09-01',
-      endDate: '2020-09-01',
+      degree: 'Técnico Superior en Desarrollo de Aplicaciones',
+      description: '• Full Stack: Java, MySQL, PHP, JavaScript\n• Móvil: Android, Flutter\n• Unity + C#',
+      startDate: '2018',
+      endDate: '2020',
     },
   
     {
       institution: 'IES Fernando Wirtz Suárez',
-      degree: 'Curso especialización Inteligencia Artificial y Big Data',
-      description: 'Adquirí habilidades en Big Data, programación de IA y aprendizaje automático, trabajando con tecnologías como Apache Hadoop, Spark y Kafka.\n\n Aprendí a utilizar Python, OpenCV, TensorFlow y Keras para desarrollar soluciones inteligentes y creativas. \n\nMe familiaricé con el web scraping usando Selenium y BeautifulSoup, y realicé análisis y visualización de datos con Pandas y Matplotlib.\n Además, gané experiencia en el uso de Docker y conceptos de redes para mejorar la eficiencia en el desarrollo.',
-      startDate: '2022-11-01',
+      degree: 'Especialización IA y Big Data',
+      description: '• Big Data: Hadoop, Spark, Kafka\n• IA/ML: Python, TensorFlow, Keras, OpenCV\n• Web Scraping: Selenium, BeautifulSoup\n• Data Analysis: Pandas, Matplotlib',
+      startDate: '2022',
       endDate: 'Presente',
     }
   ];
   
   const certificadosData = [
     {
-      name: 'GIT+GitHub: Todo un sistema de control de versiones de cero',
+      name: 'GIT + GitHub',
       empresaEmisora: 'Udemy',
-      description: 'Curso de 12h sobre el sistema de control de versiones.',
+      description: 'Control de versiones (12h)',
       logo: logoGit,
-      fecha_espedicion: '2022-09-14',
+      fecha_espedicion: 'Sep 2022',
       link: 'https://www.udemy.com/certificate/UC-8c6c6cd5-151f-4195-bc76-338131150397/'
     },
     {
-      name: 'SOLID Principles: Introducing Software Architecture & Design',
+      name: 'SOLID Principles',
       empresaEmisora: 'Udemy',
-      description: 'Curso de 2h sobre los principios de diseño SOLID en software.',
+      description: 'Arquitectura de software (2h)',
       logo: logoSolid,
-      fecha_espedicion: '2022-09-15',
+      fecha_espedicion: 'Sep 2022',
       link: 'https://www.udemy.com/certificate/UC-18d21047-46ba-4329-ae37-b23bdce830e9/'
-
-
     },
     {
-      name: ' AZ-900: Microsoft Azure Fundamentals Exam Prep 2023',
+      name: 'Azure Fundamentals AZ-900',
       empresaEmisora: 'Udemy',
-      description: 'Curso de 6,5h sobre los fundamentos de la nube de Microsoft, Azure.',
+      description: 'Microsoft Azure Cloud (6.5h)',
       logo: logoAzure,
-      fecha_espedicion: '2023-04-20',
+      fecha_espedicion: 'Abr 2023',
       link: 'https://indra.udemy.com/certificate/UC-08cff7de-06bf-4b85-876c-f74a0f3fd54d/'
-
-
     }
-
-
-  
-    // Agrega más proyectos siguiendo el mismo formato
   ];  
 
 
@@ -68,10 +59,13 @@ const Education = () => {
   return (
     <div className="content-container">
     <div className="education">
+      <h2 className="section-title">Formación Académica</h2>
       <ul>
         {educationData.map((education, index) => (
           <li key={index}>
             <h3>{education.degree}</h3>
+            <p style={{ fontWeight: '600', marginTop: '0.5rem' }}>{education.institution}</p>
+            <p style={{ opacity: '0.7', fontSize: '0.9rem', marginBottom: '1rem' }}>{education.startDate} — {education.endDate}</p>
             <p>
   {education.description.split('\n').map((line, i) => (
     <React.Fragment key={i}>
@@ -80,13 +74,10 @@ const Education = () => {
     </React.Fragment>
   ))}
 </p>
-            <p>{education.institution}</p>
-            <p>{education.startDate} — {education.endDate}</p>
           </li>
         ))}
       </ul>
-      <br></br>
-      <h2>Certificados</h2>
+      <h2 className="section-title">Certificaciones</h2>
       <GridContainer>
         {certificadosData.map((certificado, index) => (
           <CardCertificado key={index} logo={certificado.logo} link ={certificado.link} empresaEmisora={certificado.empresaEmisora} fecha_espedicion={certificado.fecha_espedicion} title={certificado.name} description={certificado.description.split('\n').map((line, i) => (

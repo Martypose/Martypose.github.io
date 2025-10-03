@@ -6,15 +6,37 @@ const About = () => {
   return (
     <div className="content-container">
     <div className="about">
-      <p>Soy Martín Pose, un desarrollador de software con más de dos años de experiencia.</p> 
-      <p>Me apasiona el campo de la inteligencia artificial y el big data, lo que me ha llevado a desarrollar proyectos personales en React, Node.js, Express y Raspberry Pi.</p>
+      <div className="about-intro">
+        <h2>Desarrollador Full Stack</h2>
+        <p>Apasionado por la IA, Big Data y soluciones innovadoras</p>
+      </div>
 
-<p>A lo largo de mi carrera, he demostrado ser adaptable y siempre busco crecimiento profesional en el ámbito tecnológico. Mis habilidades incluyen el desarrollo de aplicaciones web con React y la creación de API REST utilizando Express y Node.js. También he trabajado con Flask en Raspberry Pi para implementar soluciones de visión por computadora en tiempo real.
+      <div className="skills-section">
+        <div className="skill-category">
+          <h3>🚀 Backend</h3>
+          <p>Java • Spring • Node.js • Express • Python • Flask</p>
+        </div>
+        <div className="skill-category">
+          <h3>💡 Frontend</h3>
+          <p>React • Angular • Flutter</p>
+        </div>
+        <div className="skill-category">
+          <h3>📊 Data & AI</h3>
+          <p>TensorFlow • OpenCV • Hadoop • Spark • Kafka</p>
+        </div>
+        <div className="skill-category">
+          <h3>🗄️ Databases</h3>
+          <p>PostgreSQL • MySQL • Oracle</p>
+        </div>
+      </div>
 
-</p><p>Mi formación académica incluye un título de Técnico Superior en Desarrollo de Aplicaciones Informáticas y un curso de especialización en Inteligencia Artificial y Big Data. En estos programas, adquirí habilidades en tecnologías como Apache Hadoop, Spark, Kafka, Python, OpenCV, TensorFlow y Keras. También me familiaricé con el web scraping utilizando Selenium y BeautifulSoup, y realicé análisis y visualización de datos con Pandas y Matplotlib.</p>
-      
+      <h2 className="section-title">Experiencia Profesional</h2>
       <ExperienceTimeline />
-      <a href={curriculum} download="Curriculum_Martin_Pose.pdf">Descargar currículum</a>
+      <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+        <a href={curriculum} download="Curriculum_Martin_Pose.pdf" className="download-btn">
+          📄 Descargar Currículum
+        </a>
+      </div>
     </div>
     </div>
   );
