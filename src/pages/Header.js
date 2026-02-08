@@ -47,7 +47,7 @@ const Header = () => {
         <div className="hero-links">
           {/* Email */}
           <a
-            href="mailto:martinpose@hotmail.com"
+            href="mailto:martinpose@madeirasestanqueiro.com"
             aria-label="Email"
             title="Email"
           >

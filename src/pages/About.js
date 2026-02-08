@@ -1,5 +1,4 @@
 import React from 'react';
-import curriculum from '../assets/Martín_Pose_-_Software_Developer.pdf';
 import ExperienceTimeline from '../components/ExperienceTimeline';
 
 const About = () => {
@@ -47,11 +46,12 @@ const About = () => {
 
         <div style={{ textAlign: 'center', marginTop: '3rem' }}>
           <a
-            href={curriculum}
-            download="Curriculum_Martin_Pose.pdf"
+            href="/cv/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="download-btn"
           >
-            <span role="img" aria-label="PDF">📄</span> Descargar Currículum
+            <span role="img" aria-label="PDF">📄</span> Ver Currículum
           </a>
         </div>
       </div>
