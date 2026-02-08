@@ -38,7 +38,7 @@ const ExperienceTimeline = () => (
   <VerticalTimeline className="custom-line" lineColor="var(--accent-primary)">
     {/* Madeiras Estanqueiro */}
     <VerticalTimelineElement
-      date="2024 - actualidad"
+      date="abr. 2025 - actualidad"
       contentStyle={contentStyle}
       contentArrowStyle={arrowStyle}
       iconStyle={iconStyle('#f5f0eb')}
@@ -68,7 +68,7 @@ const ExperienceTimeline = () => (
 
     {/* Imatia */}
     <VerticalTimelineElement
-      date="jun. 2023 - 2024"
+      date="jun. 2023 - mar. 2025"
       contentStyle={contentStyle}
       contentArrowStyle={arrowStyle}
       iconStyle={iconStyle('rgb(227, 52, 60)')}
