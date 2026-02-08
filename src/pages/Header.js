@@ -40,8 +40,8 @@ const Header = () => {
 
         <h1 className="hero-name">Martín Pose</h1>
         <p className="hero-title">
-          Ingeniero de Software &{" "}
-          <span>Visión Artificial</span>
+          Software Developer &{" "}
+          <span>Computer Vision</span>
         </p>
 
         <div className="hero-links">

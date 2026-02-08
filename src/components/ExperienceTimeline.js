@@ -53,7 +53,7 @@ const ExperienceTimeline = () => (
         <img src={madeirasLogo} alt="Madeiras Estanqueiro" style={imgStyleLarge} />
       }
     >
-      <h3>Ingeniero de Visión Artificial</h3>
+      <h3>Desarrollador de Visión Artificial</h3>
       <h4>Madeiras Estanqueiro</h4>
       <p>
         • Sistemas de visión por computadora en tiempo real

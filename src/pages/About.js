@@ -6,7 +6,7 @@ const About = () => {
     <div className="content-container">
       <div className="about">
         <div className="about-intro">
-          <h2>Ingeniero Full Stack & AI</h2>
+          <h2>Full Stack & AI Developer</h2>
           <p>
             Apasionado por la inteligencia artificial aplicada, la visión por
             computadora y el desarrollo de soluciones innovadoras para entornos
