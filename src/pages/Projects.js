@@ -1,83 +1,70 @@
 import React from 'react';
-import esquema_raspOCV from '../assets/esquema_raspOCV.png';
 import { Card } from './Card';
-import styled from 'styled-components';
+import visionIndustrial from '../assets/vision_industrial.png';
 import apiimage from '../assets/api.png';
 import reactimage from '../assets/react_app.png';
 import flutterimage from '../assets/Flutter.png';
 import analislogimage from '../assets/analislog.png';
-const GridContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
-
-
-// const projectsData = [
-//   {
-//     name: 'Medidor producción en tiempo real.',
-//     description: 'Usando una raspberry, una camara y conexion a internet he realizado un proyecto de vision de computadora.\n'+
-//     'Para ello se han elegido las siguientes tecnologías:\n\n • Webserver con Flask. \n• OpenCV para procesamiento de imágenes, detección y medición de objetos.'+
-//     '\n• Socketio para comunicarse con un servidor externo donde se guardarán'+
-//     ' y analizarán los datos para mostrarlos a cualquier aplicación que consuma esa API.'+
-//     '\n\n Aqui muestro un diagrama de algunos elementos utilizados en el montaje.',
-//     repoLink: null,
-//   },
-
-//   // Agrega más proyectos siguiendo el mismo formato
-// ];
 
 const projectsData = [
   {
-    name: 'Visión por Computadora IoT',
-    description: '• Raspberry Pi + Flask\n• OpenCV\n• SocketIO + API externa',
-    image: esquema_raspOCV,
-    link: 'https://github.com/Martypose/RaspOpenCv'
+    name: 'Visión Artificial Industrial',
+    description:
+      'Sistema de visión por computadora en tiempo real para control de calidad en entornos de producción. Detección y medición automática mediante deep learning.',
+    image: visionIndustrial,
+    link: null,
+    tags: ['Python', 'YOLO', 'OpenCV', 'React', 'Node.js'],
   },
   {
     name: 'API REST Node.js',
-    description: '• Express + MySQL\n• JWT Auth\n• SocketIO',
+    description:
+      'API backend completa con autenticación JWT, gestión de datos en tiempo real y comunicación bidireccional mediante WebSockets.',
     image: apiimage,
-    link: 'https://github.com/Martypose/Express_MadEst'
+    link: 'https://github.com/Martypose/Express_MadEst',
+    tags: ['Node.js', 'Express', 'MySQL', 'JWT', 'SocketIO'],
   },
   {
-    name: 'App Gestión React',
-    description: '• JWT Login\n• Responsive\n• Chart.js',
+    name: 'Dashboard React',
+    description:
+      'Aplicación web de gestión con autenticación, visualización de datos con gráficos interactivos y diseño responsive.',
     image: reactimage,
-    link: 'https://github.com/Martypose/React_MadEst'
+    link: 'https://github.com/Martypose/React_MadEst',
+    tags: ['React', 'Chart.js', 'JWT', 'Responsive'],
   },
   {
-    name: 'Flutter Multiplataforma',
-    description: '• Android/iOS\n• Consume API REST',
+    name: 'App Flutter Multiplataforma',
+    description:
+      'Aplicación móvil multiplataforma que consume API REST propia, compilada para Android e iOS desde un mismo código fuente.',
     image: flutterimage,
-    link: 'https://github.com/Martypose/Flutter_MadEst'
-
+    link: 'https://github.com/Martypose/Flutter_MadEst',
+    tags: ['Flutter', 'Dart', 'Android', 'iOS'],
   },
   {
-    name: 'Análisis de Logs Java',
-    description: '• Maven + DAO\n• JSP + JavaScript',
+    name: 'Sistema de Análisis de Logs',
+    description:
+      'Herramienta de análisis de logs de aplicaciones con interfaz web, filtrado avanzado y exportación de datos.',
     image: analislogimage,
-    link: 'https://github.com/PracticasIndra/AnalisisLog'
-
-  }
-
-  // Agrega más proyectos siguiendo el mismo formato
+    link: 'https://github.com/PracticasIndra/AnalisisLog',
+    tags: ['Java', 'Maven', 'JSP', 'JavaScript'],
+  },
 ];
 
 const Projects = () => {
   return (
     <div className="content-container">
       <h2 className="section-title">Proyectos Destacados</h2>
-      <GridContainer>
+      <div className="projects-grid">
         {projectsData.map((project, index) => (
-          <Card key={index} image={project.image} link ={project.link} title={project.name} description={project.description.split('\n').map((line, i) => (
-     <React.Fragment key={i}>
-       {line}
-       <br />
-     </React.Fragment>
-   ))} />
+          <Card
+            key={index}
+            image={project.image}
+            link={project.link}
+            title={project.name}
+            tags={project.tags}
+            description={project.description}
+          />
         ))}
-      </GridContainer>
+      </div>
     </div>
   );
 };
