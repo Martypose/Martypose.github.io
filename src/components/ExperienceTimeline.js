@@ -6,6 +6,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import imatia from '../assets/imatia.jpg';
 import minsait from '../assets/minsait.jpg';
+import madeirasLogo from '../assets/logo.jpg';
 
 const iconStyle = (bg) => ({
   background: bg,
@@ -40,15 +41,9 @@ const ExperienceTimeline = () => (
       date="2024 - actualidad"
       contentStyle={contentStyle}
       contentArrowStyle={arrowStyle}
-      iconStyle={iconStyle('linear-gradient(135deg, #667eea, #764ba2)')}
+      iconStyle={iconStyle('#f5f0eb')}
       icon={
-        <span
-          role="img"
-          aria-label="Vision"
-          style={{ fontSize: '1.4rem' }}
-        >
-          🔬
-        </span>
+        <img src={madeirasLogo} alt="Madeiras Estanqueiro" style={imgStyle} />
       }
     >
       <h3>Ingeniero de Visión Artificial</h3>

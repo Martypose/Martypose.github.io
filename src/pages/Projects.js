@@ -1,10 +1,9 @@
 import React from 'react';
 import { Card } from './Card';
 import visionIndustrial from '../assets/vision_industrial.png';
-import apiimage from '../assets/api.png';
-import reactimage from '../assets/react_app.png';
-import flutterimage from '../assets/Flutter.png';
-import analislogimage from '../assets/analislog.png';
+import apiBackend from '../assets/api_backend.png';
+import dashboard from '../assets/dashboard.png';
+import mapaOrigenes from '../assets/mapa_origenes.png';
 
 const projectsData = [
   {
@@ -13,39 +12,31 @@ const projectsData = [
       'Sistema de visión por computadora en tiempo real para control de calidad en entornos de producción. Detección y medición automática mediante deep learning.',
     image: visionIndustrial,
     link: null,
-    tags: ['Python', 'YOLO', 'OpenCV', 'React', 'Node.js'],
+    tags: ['Python', 'YOLO', 'OpenCV', 'ZMQ', 'Edge Computing'],
   },
   {
-    name: 'API REST Node.js',
+    name: 'Dashboard de Monitorización',
     description:
-      'API backend completa con autenticación JWT, gestión de datos en tiempo real y comunicación bidireccional mediante WebSockets.',
-    image: apiimage,
-    link: 'https://github.com/Martypose/Express_MadEst',
-    tags: ['Node.js', 'Express', 'MySQL', 'JWT', 'SocketIO'],
+      'Panel de control full-stack para monitorización industrial en tiempo real con gráficos interactivos, alertas y gestión de cámaras IoT.',
+    image: dashboard,
+    link: null,
+    tags: ['React', 'Node.js', 'Chart.js', 'WebSocket', 'MySQL'],
   },
   {
-    name: 'Dashboard React',
+    name: 'API REST Industrial',
     description:
-      'Aplicación web de gestión con autenticación, visualización de datos con gráficos interactivos y diseño responsive.',
-    image: reactimage,
-    link: 'https://github.com/Martypose/React_MadEst',
-    tags: ['React', 'Chart.js', 'JWT', 'Responsive'],
+      'Backend escalable con autenticación JWT, endpoints RESTful, comunicación en tiempo real y gestión de datos de producción.',
+    image: apiBackend,
+    link: null,
+    tags: ['Node.js', 'Express', 'MySQL', 'JWT', 'ZMQ'],
   },
   {
-    name: 'App Flutter Multiplataforma',
+    name: 'Mapa Interactivo de Orígenes',
     description:
-      'Aplicación móvil multiplataforma que consume API REST propia, compilada para Android e iOS desde un mismo código fuente.',
-    image: flutterimage,
-    link: 'https://github.com/Martypose/Flutter_MadEst',
-    tags: ['Flutter', 'Dart', 'Android', 'iOS'],
-  },
-  {
-    name: 'Sistema de Análisis de Logs',
-    description:
-      'Herramienta de análisis de logs de aplicaciones con interfaz web, filtrado avanzado y exportación de datos.',
-    image: analislogimage,
-    link: 'https://github.com/PracticasIndra/AnalisisLog',
-    tags: ['Java', 'Maven', 'JSP', 'JavaScript'],
+      'Visor geoespacial de parcelas forestales con integración de catastro, búsqueda inteligente y geolocalización en tiempo real.',
+    image: mapaOrigenes,
+    link: null,
+    tags: ['React', 'Leaflet', 'Catastro API', 'GeoJSON'],
   },
 ];
 
