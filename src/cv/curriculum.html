@@ -132,14 +132,51 @@
             align-items: center;
             gap: 0.6rem;
             padding: 0.25rem 0;
-            font-size: 0.78rem;
+            font-size: 0.75rem;
+            overflow-wrap: break-word;
+            word-break: break-all;
         }
 
         .contact-item .icon {
             font-size: 0.85rem;
             width: 18px;
+            min-width: 18px;
             text-align: center;
             opacity: 0.7;
+        }
+
+        .print-bar {
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 0;
+        }
+
+        .print-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.8rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .print-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        @media print {
+            .print-bar {
+                display: none !important;
+            }
         }
 
         /* Skills with bars */
@@ -349,6 +386,9 @@
 </head>
 
 <body>
+    <div class="print-bar">
+        <button class="print-btn" onclick="window.print()">📄 Descargar PDF</button>
+    </div>
     <div class="page">
         <!-- SIDEBAR -->
         <aside class="sidebar">
@@ -363,7 +403,9 @@
             <div class="sidebar-section">
                 <h3>Datos personales</h3>
                 <div class="contact-item"><span class="icon">📍</span> A Coruña, España</div>
-                <div class="contact-item"><span class="icon">📧</span> martinpose@madeirasestanqueiro.com</div>
+                <div class="contact-item"><span class="icon">📧</span> <a
+                        href="mailto:martinpose@madeirasestanqueiro.com">martinpose@<br>madeirasestanqueiro.com</a>
+                </div>
                 <div class="contact-item"><span class="icon">🔗</span> <a
                         href="https://linkedin.com/in/martín-pose-38a7911a8">LinkedIn</a></div>
                 <div class="contact-item"><span class="icon">💻</span> <a href="https://github.com/Martypose">GitHub</a>
