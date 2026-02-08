@@ -22,6 +22,13 @@ const imgStyle = {
   objectFit: 'contain',
 };
 
+const imgStyleLarge = {
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
+  borderRadius: '50%',
+};
+
 const contentStyle = {
   background: 'var(--bg-card)',
   color: 'var(--text-primary)',
@@ -43,7 +50,7 @@ const ExperienceTimeline = () => (
       contentArrowStyle={arrowStyle}
       iconStyle={iconStyle('#f5f0eb')}
       icon={
-        <img src={madeirasLogo} alt="Madeiras Estanqueiro" style={imgStyle} />
+        <img src={madeirasLogo} alt="Madeiras Estanqueiro" style={imgStyleLarge} />
       }
     >
       <h3>Ingeniero de Visión Artificial</h3>
