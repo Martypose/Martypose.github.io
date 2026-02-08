@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martín Pose — Curriculum Vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #e8e8e8;
+            color: #2d2d3a;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+                min-height: 100vh;
+            }
+        }
+
+        /* ===== SIDEBAR ===== */
+        .sidebar {
+            background: linear-gradient(180deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e0e0e0;
+            padding: 2.2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+
+        .photo-wrapper {
+            text-align: center;
+        }
+
+        .photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(102, 126, 234, 0.5);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .sidebar-name {
+            text-align: center;
+            margin-top: 0.8rem;
+        }
+
+        .sidebar-name h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -0.01em;
+        }
+
+        .sidebar-name p {
+            font-size: 0.72rem;
+            color: rgba(102, 126, 234, 0.9);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-top: 0.3rem;
+        }
+
+        .sidebar-section h3 {
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.45);
+            margin-bottom: 0.7rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar-section ul {
+            list-style: none;
+        }
+
+        .sidebar-section li {
+            font-size: 0.78rem;
+            padding: 0.2rem 0;
+            color: #c8c8d8;
+        }
+
+        .sidebar-section li a {
+            color: #8eaadc;
+            text-decoration: none;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.25rem 0;
+            font-size: 0.78rem;
+        }
+
+        .contact-item .icon {
+            font-size: 0.85rem;
+            width: 18px;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        /* Skills with bars */
+        .skill-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.2rem 0;
+            font-size: 0.78rem;
+        }
+
+        .skill-bar {
+            width: 60px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 2px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        /* Language dots */
+        .lang-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.2rem 0;
+            font-size: 0.78rem;
+        }
+
+        .lang-dots {
+            display: flex;
+            gap: 3px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .dot.filled {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .main {
+            padding: 2.2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .main-section h2 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #1a1a2e;
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.9rem;
+            border-bottom: 2px solid #667eea;
+            display: inline-block;
+        }
+
+        .profile-text {
+            font-size: 0.82rem;
+            color: #4a4a5a;
+            line-height: 1.65;
+        }
+
+        /* Experience */
+        .exp-item {
+            margin-bottom: 1.2rem;
+            position: relative;
+            padding-left: 1rem;
+            border-left: 2px solid #e8e8f0;
+        }
+
+        .exp-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-item::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 4px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.15rem;
+        }
+
+        .exp-title {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .exp-date {
+            font-size: 0.72rem;
+            color: #888;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .exp-company {
+            font-size: 0.78rem;
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+        }
+
+        .exp-desc {
+            font-size: 0.77rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .exp-desc li {
+            margin-bottom: 0.15rem;
+            list-style: none;
+            position: relative;
+            padding-left: 0.9rem;
+        }
+
+        .exp-desc li::before {
+            content: '›';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        /* Education */
+        .edu-item {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #e8e8f0;
+            position: relative;
+        }
+
+        .edu-item::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 4px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .edu-title {
+            font-size: 0.84rem;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .edu-school {
+            font-size: 0.76rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .edu-date {
+            font-size: 0.72rem;
+            color: #888;
+        }
+
+        .edu-details {
+            font-size: 0.75rem;
+            color: #555;
+            margin-top: 0.3rem;
+            line-height: 1.55;
+        }
+
+        /* Certifications */
+        .cert-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .cert-tag {
+            font-size: 0.72rem;
+            padding: 0.3rem 0.7rem;
+            background: #f0f0fa;
+            border-radius: 100px;
+            color: #4a4a6a;
+            border: 1px solid #e0e0ea;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="photo-wrapper">
+                <img class="photo" src="./martin.png" alt="Martín Pose" />
+                <div class="sidebar-name">
+                    <h1>Martín Pose</h1>
+                    <p>Software & AI Engineer</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Datos personales</h3>
+                <div class="contact-item"><span class="icon">📍</span> A Coruña, España</div>
+                <div class="contact-item"><span class="icon">📧</span> martinpose@hotmail.com</div>
+                <div class="contact-item"><span class="icon">🔗</span> <a
+                        href="https://linkedin.com/in/martín-pose-38a7911a8">LinkedIn</a></div>
+                <div class="contact-item"><span class="icon">💻</span> <a href="https://github.com/Martypose">GitHub</a>
+                </div>
+                <div class="contact-item"><span class="icon">🌐</span> <a
+                        href="https://martypose.github.io">Portfolio</a></div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Competencias</h3>
+                <div class="skill-row"><span>Python / OpenCV / YOLO</span>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:95%"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span>React / Angular</span>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:90%"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span>Node.js / Express</span>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:88%"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span>Java / Spring</span>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span>TensorFlow / DL</span>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:80%"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span>PostgreSQL / MySQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:87%"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span>Docker / Linux</span>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:82%"></div>
+                    </div>
+                </div>
+                <div class="skill-row"><span>Git / CI·CD</span>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Idiomas</h3>
+                <div class="lang-row">
+                    <span>Castellano</span>
+                    <div class="lang-dots">
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                    </div>
+                </div>
+                <div class="lang-row">
+                    <span>Galego</span>
+                    <div class="lang-dots">
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                    </div>
+                </div>
+                <div class="lang-row">
+                    <span>English</span>
+                    <div class="lang-dots">
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main">
+            <div class="main-section">
+                <h2>Perfil profesional</h2>
+                <p class="profile-text">
+                    Ingeniero de software con más de 4 años de experiencia profesional.
+                    Especializado en visión por computadora, deep learning y desarrollo full stack.
+                    Actualmente diseño y despliego sistemas de IA en tiempo real para entornos de producción industrial,
+                    combinando edge computing, modelos de detección avanzados y dashboards de monitorización.
+                </p>
+            </div>
+
+            <div class="main-section">
+                <h2>Experiencia laboral</h2>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <span class="exp-title">Ingeniero de Visión Artificial</span>
+                        <span class="exp-date">2024 — actualidad</span>
+                    </div>
+                    <div class="exp-company">Madeiras Estanqueiro, A Coruña</div>
+                    <ul class="exp-desc">
+                        <li>Diseño y desarrollo de sistemas de visión por computadora en tiempo real para control de
+                            calidad</li>
+                        <li>Implementación de modelos de deep learning (YOLO) para detección y medición automática</li>
+                        <li>Desarrollo de dashboard de monitorización full-stack con React y Node.js</li>
+                        <li>Integración IoT con líneas de producción y sensores industriales</li>
+                        <li>Administración de infraestructura Linux y despliegue con Docker</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <span class="exp-title">Programador Full Stack</span>
+                        <span class="exp-date">jun 2023 — 2024</span>
+                    </div>
+                    <div class="exp-company">Imatia, A Coruña</div>
+                    <ul class="exp-desc">
+                        <li>Desarrollo full stack con Angular y Spring Boot</li>
+                        <li>ETLs y procesamiento de datos con Python</li>
+                        <li>Integración continua y despliegue con Jenkins</li>
+                        <li>Base de datos PostgreSQL y optimización de consultas</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <span class="exp-title">Desarrollador de Software</span>
+                        <span class="exp-date">feb 2021 — jun 2023</span>
+                    </div>
+                    <div class="exp-company">Minsait — Naturgy, A Coruña</div>
+                    <ul class="exp-desc">
+                        <li>Desarrollo backend con Java y Oracle SQL para el sector energético</li>
+                        <li>Migraciones de infraestructura a Oracle Cloud</li>
+                        <li>Mantenimiento y optimización de aplicaciones legacy (PowerBuilder, JSP)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-section">
+                <h2>Formación</h2>
+
+                <div class="edu-item">
+                    <div class="edu-title">Especialización en IA y Big Data</div>
+                    <div class="edu-school">IES Fernando Wirtz Suárez, A Coruña</div>
+                    <div class="edu-date">2022 — 2023</div>
+                    <div class="edu-details">
+                        Big Data (Hadoop, Spark, Kafka) · IA/ML (Python, TensorFlow, Keras, OpenCV) ·
+                        Web Scraping (Selenium) · Análisis de datos (Pandas, Matplotlib)
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-title">Técnico Superior en Desarrollo de Aplicaciones</div>
+                    <div class="edu-school">CPR Plurilingüe Karbo, Carballo</div>
+                    <div class="edu-date">2018 — 2020</div>
+                    <div class="edu-details">
+                        Full Stack (Java, MySQL, PHP, JavaScript) · Móvil (Android, Flutter) · Game Dev (Unity + C#)
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-section">
+                <h2>Certificaciones</h2>
+                <div class="cert-grid">
+                    <span class="cert-tag">Azure Fundamentals AZ-900</span>
+                    <span class="cert-tag">SOLID Principles</span>
+                    <span class="cert-tag">Git + GitHub Avanzado</span>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
