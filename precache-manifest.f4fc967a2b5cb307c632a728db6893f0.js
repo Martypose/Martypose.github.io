@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5cd2224a21b0a41bcc5c77c41c52a414",
+    "revision": "a02a2644d9c8c7fc48ac94822080ee6a",
     "url": "/index.html"
   },
   {
-    "revision": "0787f780950af742a4aa",
+    "revision": "5a3fb212d5527897018a",
     "url": "/static/css/2.0e31c611.chunk.css"
   },
   {
-    "revision": "d330b8553ac0d3232955",
+    "revision": "2375f90200a7a749b6da",
     "url": "/static/css/main.9f164e9c.chunk.css"
   },
   {
-    "revision": "0787f780950af742a4aa",
-    "url": "/static/js/2.7e04af67.chunk.js"
+    "revision": "5a3fb212d5527897018a",
+    "url": "/static/js/2.af2460c6.chunk.js"
   },
   {
-    "revision": "9c0c47d34de10fa07a7c",
-    "url": "/static/js/3.cf3acbb1.chunk.js"
+    "revision": "f51960728f1f3b5a181b1246da047896",
+    "url": "/static/js/2.af2460c6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d330b8553ac0d3232955",
-    "url": "/static/js/main.cefa4c40.chunk.js"
+    "revision": "983c24e6fe1fc56e90aa",
+    "url": "/static/js/3.75828415.chunk.js"
   },
   {
-    "revision": "3ad64bfc4cfd8e8d8f04",
-    "url": "/static/js/runtime~main.3bdd5ab3.js"
+    "revision": "2375f90200a7a749b6da",
+    "url": "/static/js/main.b321861d.chunk.js"
+  },
+  {
+    "revision": "2fbee0b52147c3b7173a",
+    "url": "/static/js/runtime-main.d25b6eea.js"
   },
   {
     "revision": "7cad5d25852682066124b5404db75eeb",
@@ -40,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/git.9750f797.jpg"
   },
   {
-    "revision": "10a05157719c3c5d0d92fac54eaafcb5",
-    "url": "/static/media/logo.10a05157.jpg"
+    "revision": "ed158895f3251acaec228228b2794748",
+    "url": "/static/media/logo-pino-pinaster.ed158895.png"
   },
   {
     "revision": "385435edb0227a2b07060682456286a9",
