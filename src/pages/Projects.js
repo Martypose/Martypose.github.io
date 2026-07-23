@@ -11,7 +11,7 @@ const projectsData = [
     description:
       'Las clasificadoras miden tablas; Oráculo ve defectos. Sistema de visión con 7 cámaras Raspberry Pi, YOLO y medición milimétrica en menos de un segundo — nudos, resina, podredumbre y descabezados en producción real. Human-in-the-loop, registro por tabla y edge offline para que la línea no pare. Mejor aprovechamiento de la madera y menos reclamaciones.',
     image: visionIndustrial,
-    link: 'https://www.linkedin.com/in/mart%C3%ADn-pose-38a7911a8/',
+    link: null,
     tags: ['Python', 'YOLO', 'OpenCV', 'ZMQ', 'Raspberry Pi', 'Edge'],
   },
   {
