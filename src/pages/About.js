@@ -6,38 +6,39 @@ const About = () => {
     <div className="content-container">
       <div className="about">
         <div className="about-intro">
-          <h2>Full Stack & AI Developer</h2>
+          <h2>Operations & Industrial AI Developer</h2>
           <p>
-            Apasionado por la inteligencia artificial aplicada, la visión por
-            computadora y el desarrollo de soluciones innovadoras para entornos
-            industriales y empresariales.
+            Diseño y despliego sistemas de visión artificial en producción real.
+            En Madeiras Estanqueiro (Galicia) construí Oráculo: inspección automática
+            de madera con cámaras en línea, deep learning y dashboards de
+            monitorización — de la captura en edge al registro de cada tabla.
           </p>
         </div>
 
         <div className="skills-section">
           <div className="skill-category">
             <h3><span role="img" aria-label="AI">🤖</span> IA & Visión</h3>
-            <p>Python • YOLO • OpenCV • TensorFlow • Deep Learning</p>
+            <p>Python • YOLO • OpenCV • Deep Learning • GPU</p>
+          </div>
+          <div className="skill-category">
+            <h3><span role="img" aria-label="Edge">📡</span> Edge & IoT</h3>
+            <p>Raspberry Pi • ZMQ • MQTT • Edge Computing</p>
           </div>
           <div className="skill-category">
             <h3><span role="img" aria-label="Backend">💻</span> Backend</h3>
-            <p>Java • Spring • Node.js • Express • Python • Flask</p>
+            <p>Node.js • Express • Python • Java • Spring</p>
           </div>
           <div className="skill-category">
             <h3><span role="img" aria-label="Frontend">⚛️</span> Frontend</h3>
-            <p>React • Angular • Flutter • HTML/CSS</p>
-          </div>
-          <div className="skill-category">
-            <h3><span role="img" aria-label="Data">📊</span> Data & Big Data</h3>
-            <p>Hadoop • Spark • Kafka • Pandas • Matplotlib</p>
+            <p>React • Angular • HTML/CSS • Dashboards en tiempo real</p>
           </div>
           <div className="skill-category">
             <h3><span role="img" aria-label="Database">🗄️</span> Bases de Datos</h3>
             <p>PostgreSQL • MySQL • Oracle • MongoDB</p>
           </div>
           <div className="skill-category">
-            <h3><span role="img" aria-label="Cloud">☁️</span> DevOps & Cloud</h3>
-            <p>Docker • Linux • Azure • CI/CD • Git</p>
+            <h3><span role="img" aria-label="Ops">☁️</span> Ops & Infra</h3>
+            <p>Linux • systemd • Docker • CI/CD • Git</p>
           </div>
         </div>
 

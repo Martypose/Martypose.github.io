@@ -53,21 +53,22 @@ const ExperienceTimeline = () => (
         <img src={madeirasLogo} alt="Madeiras Estanqueiro" style={imgStyleMadeiras} />
       }
     >
-      <h3>Desarrollador de Visión Artificial</h3>
+      <h3>Operations & Industrial AI Developer</h3>
       <h4>Madeiras Estanqueiro</h4>
       <p>
-        • Sistemas de visión por computadora en tiempo real
+        • Oráculo: visión industrial con 7 cámaras Raspberry Pi en línea de producción
         <br />
-        • Modelos de deep learning para detección y medición automática
+        • Detección de defectos con YOLO y medición milimétrica en &lt;1 s
         <br />
-        • Dashboard de monitorización full-stack
+        • Human-in-the-loop: correcciones de operadores para reentrenar el modelo
         <br />
-        • Integración IoT con líneas de producción
+        • Dashboard full-stack, registro por tabla y operación edge offline
       </p>
       <div className="tech-tags">
         <span className="tech-tag">Python</span>
         <span className="tech-tag">YOLO</span>
         <span className="tech-tag">OpenCV</span>
+        <span className="tech-tag">ZMQ</span>
         <span className="tech-tag">React</span>
         <span className="tech-tag">Node.js</span>
       </div>
