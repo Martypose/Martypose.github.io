@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a02a2644d9c8c7fc48ac94822080ee6a",
+    "revision": "d9e56491271b687d1e3526e0e266d3e3",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.0e31c611.chunk.css"
   },
   {
-    "revision": "2375f90200a7a749b6da",
+    "revision": "e3c33c5e331460e8a8e7",
     "url": "/static/css/main.9f164e9c.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/3.75828415.chunk.js"
   },
   {
-    "revision": "2375f90200a7a749b6da",
-    "url": "/static/js/main.b321861d.chunk.js"
+    "revision": "e3c33c5e331460e8a8e7",
+    "url": "/static/js/main.d90718d5.chunk.js"
   },
   {
     "revision": "2fbee0b52147c3b7173a",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7cad5d25852682066124b5404db75eeb",
     "url": "/static/media/api_backend.7cad5d25.png"
-  },
-  {
-    "revision": "f9b54b6f91befeb84038ad7b1f413fe2",
-    "url": "/static/media/dashboard.f9b54b6f.png"
   },
   {
     "revision": "9750f7976a7c381f744073e8dc0f10cb",
@@ -56,7 +52,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/martin.9f26c666.png"
   },
   {
-    "revision": "65f4c571ed23b90dc6ac8c8df6920aa9",
-    "url": "/static/media/vision_industrial.65f4c571.png"
+    "revision": "391f310bb1b6fecd63a46c1a6ec55620",
+    "url": "/static/media/oraculo-command-center.391f310b.jpg"
+  },
+  {
+    "revision": "0f6ef6000919663801eb1fb25f02d6c4",
+    "url": "/static/media/oraculo-linkedin-cover.0f6ef600.png"
   }
 ]);
