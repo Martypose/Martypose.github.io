@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card } from './Card';
-import oraculoCover from '../assets/oraculo-linkedin-cover.png';
-import oraculoCommand from '../assets/oraculo-command-center.jpg';
+import visionIndustrial from '../assets/vision_industrial.png';
 import apiBackend from '../assets/api_backend.png';
+import dashboard from '../assets/dashboard.png';
 import mapaOrigenes from '../assets/mapa_origenes.png';
 
 const projectsData = [
@@ -10,15 +10,15 @@ const projectsData = [
     name: 'Oráculo — Visión Industrial',
     description:
       'Las clasificadoras miden tablas; Oráculo ve defectos. Sistema de visión con 7 cámaras Raspberry Pi, YOLO y medición milimétrica en menos de un segundo — nudos, resina, podredumbre y descabezados en producción real. Human-in-the-loop, registro por tabla y edge offline para que la línea no pare. Mejor aprovechamiento de la madera y menos reclamaciones.',
-    image: oraculoCover,
+    image: visionIndustrial,
     link: 'https://www.linkedin.com/in/mart%C3%ADn-pose-38a7911a8/',
     tags: ['Python', 'YOLO', 'OpenCV', 'ZMQ', 'Raspberry Pi', 'Edge'],
   },
   {
-    name: 'Command Center — Monitorización',
+    name: 'Dashboard de Monitorización',
     description:
-      'Panel de control para Oráculo: estado de cámaras y servicios, métricas en tiempo real y acceso desde móvil. Pensado para operar la línea sin depender de estar en planta.',
-    image: oraculoCommand,
+      'Panel de control del ecosistema Oráculo: estado de cámaras y servicios, métricas en tiempo real y acceso desde móvil para operar sin estar en planta.',
+    image: dashboard,
     link: null,
     tags: ['React', 'Node.js', 'WebSocket', 'MySQL', 'Ops'],
   },
