@@ -6,7 +6,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import imatia from '../assets/imatia.jpg';
 import minsait from '../assets/minsait.jpg';
-import madeirasLogo from '../assets/logo.jpg';
+import madeirasLogo from '../assets/logo-pino-pinaster.png';
 
 const iconStyle = (bg) => ({
   background: bg,
@@ -22,7 +22,7 @@ const imgStyle = {
   objectFit: 'contain',
 };
 
-const imgStyleLarge = {
+const imgStyleMadeiras = {
   width: '100%',
   height: '100%',
   objectFit: 'cover',
@@ -48,9 +48,9 @@ const ExperienceTimeline = () => (
       date="abr. 2025 - actualidad"
       contentStyle={contentStyle}
       contentArrowStyle={arrowStyle}
-      iconStyle={iconStyle('#f5f0eb')}
+      iconStyle={iconStyle('#1f4a32')}
       icon={
-        <img src={madeirasLogo} alt="Madeiras Estanqueiro" style={imgStyleLarge} />
+        <img src={madeirasLogo} alt="Madeiras Estanqueiro" style={imgStyleMadeiras} />
       }
     >
       <h3>Desarrollador de Visión Artificial</h3>
